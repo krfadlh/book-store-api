@@ -1,0 +1,28 @@
+{
+  "name": "dot-indonesia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wdio-test": "npx wdio ./config/wdio.conf.js",
+    "report": "allure generate ./allure-results --clean && allure open",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chai": "^4.0.2",
+    "chai-webdriverio": "^1.0.0",
+    "mocha": "^10.2.0",
+    "webdriverio": "^8.20.4"
+  },
+  "devDependencies": {
+    "@wdio/browser-runner": "^8.20.5",
+    "@wdio/cli": "^8.20.5",
+    "@wdio/mocha-framework": "^8.20.3",
+    "@wdio/spec-reporter": "^8.20.0",
+    "allure-commandline": "^2.24.1"
+  }
+}
